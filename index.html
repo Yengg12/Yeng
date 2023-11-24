@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter to My Girlfriend</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F5B7B1 ;
+            text-align: center;
+            margin: 50px;
+        }
+
+        header {
+            background-color: #ff5e62;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            font-size: 24px;
+        }
+
+        main {
+            background-color: #ff5e62;
+            margin-top: 20px;
+            font-size: 20px;
+            padding: 20px;
+            width: 1000px;
+            font-family: Big Caslon;
+            font-weight: bold;
+            border-radius: 20px;
+            margin-left: 60px;
+
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>A Love Letter to My Amazing Atinnnn Cute</h1>
+    </header>
+
+    <main>
+        <label for="girlfriendName">Tuan Puteri Cantik Sila Letak Nama Awak: </label>
+        <input type="text" id="girlfriendName" placeholder="Type kat sini cinter!!!">
+        <button onclick="generateLoveLetter()">Generate Love Letter</button>
+
+        <div id="output"></div>
+    </main>
+
+    <footer>
+        <p>&copy; P.S. You are the best thing that ever happened to me.</p>
+    </footer>
+
+    <script>
+        function generateLoveLetter() {
+            var girlfriendName = document.getElementById('girlfriendName').value;
+
+            if (girlfriendName === "") {
+                alert("Sayanggg letakkk nama awak dulu yerr!");
+            } else {
+                var loveLetter = `
+                    <p>My Dearest ${girlfriendName},</p>
+                    <p>Haiii ${girlfriendName}, How are you?, my love! I hope the sun is shining as brightly as your beautiful smile today. I wanted to take a moment to tell you how truly special you are to me. Your presence fills my world with warmth and joy, and I am grateful for every moment we share together.</p>
+                    <p>As I sit down to write this letter, I'm overwhelmed with gratitude for having you in my life. You are the melody to my heart's song, the sunshine that brightens my darkest days, and the anchor that keeps me grounded. I love you more than words can express.</p>
+                    <p>Forgive me if my words sometimes fail to capture the depth of my feelings. You, my love, are a masterpiece, a work of art painted with the colors of passion and tenderness. With each passing day, my love for you grows stronger, deeper, and more profound.</p>
+                    <p>So here's to us, to our journey together, and to the countless memories yet to be created. You are my confidant, my love, and my best friend. I promise to cherish, respect, and adore you today, tomorrow, and for all the days to come.</p>
+                    <!-- ... (rest of the letter content) ... -->
+                    <p>DARIPADA PAKCIK >,<br>Yengggg Buchukkkk</p>
+                `;
+
+                document.getElementById('output').innerHTML = loveLetter;
+            }
+        }
+    </script>
+</body>
+</html>

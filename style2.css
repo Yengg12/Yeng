@@ -1,0 +1,43 @@
+/* Add the following styles to your existing CSS code */
+
+button {
+    background-color: #6d13ff; /* Set the button background color */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s; /* Add a smooth transition effect */
+}
+
+button:hover {
+    background-color: white; /* Change the background color on hover */
+    color: #4a0c9e ;
+}
+
+
+/* Add the following styles to your existing CSS code */
+
+main label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff; /* Set the label text color */
+    font-size: 18px;
+}
+
+main input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #fff; /* Set the input border color */
+    border-radius: 5px;
+}
+
+main input::placeholder {
+    color: #aaa; /* Set the placeholder text color */
+}
+
+main input:focus {
+    outline: none;
+    border-color: #6d13ff; /* Set the input border color on focus */
+}
